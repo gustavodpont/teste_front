@@ -1,4 +1,4 @@
-##Como iniciar a API
+## Como iniciar a API
 
 Necessário ter instalado:
   * node v8.* ou superior
@@ -14,10 +14,10 @@ Instalar as dependências\
 Iniciar o servidor\
 `npm run server:run`
 
-##Rotas da API
+## Rotas da API
 
 > Método: GET\
-> Rota: http://localhost:3000/api/product\
+> Rota: http://localhost:3000/api/product<br/>
 > Parâmetros da requisição:
 > > Consulta: 
 > > * q: string não obrigatória
@@ -25,9 +25,9 @@ Iniciar o servidor\
 > Tipo de retorno: Array\
 > Exemplos de requisição: 
 > > * GET /api/product
-> >  * retorno: todos os produtos
+> >   * retorno: todos os produtos
 > > * GET /api/product?q=bicic
-> >  * retorno: todos os produtos que contenham "bicic"
+> >   * retorno: todos os produtos que contenham "bicic"
 >
 > Exemplo de retorno:
 > > <pre>
@@ -58,7 +58,7 @@ Iniciar o servidor\
 ---
 
 > Método: GET\
-> Rota: http://localhost:3000/api/product/{productId}\
+> Rota: http://localhost:3000/api/product/{productId}<br/>
 > Parâmetros da requisição:
 > > Caminho: 
 > > * productId: id do produto
@@ -66,9 +66,9 @@ Iniciar o servidor\
 > Tipo de retorno: JSON\
 > Exemplos de requisição: 
 > > * GET /api/product/1 
-> >  * retorno: produto de id 1
+> >   * retorno: produto de id 1
 > > * GET /api/product/100, retorno: produto de id 100
-> >  * retorno: produto de id 100
+> >   * retorno: produto de id 100
 >
 > Exemplo de retorno:
 > > <pre>
@@ -87,7 +87,7 @@ Iniciar o servidor\
 ---
 
 > Método: POST\
-> Rota: http://localhost:3000/api/product\
+> Rota: http://localhost:3000/api/product<br/>
 > Parâmetros da requisição:
 > > Payload: 
 > > * name: string obrigatória
@@ -98,7 +98,7 @@ Iniciar o servidor\
 > Tipo de retorno: JSON\
 > Exemplos de requisição: 
 > > * POST /api/product
-> >  * payload: {\
+> >   * payload: {\
 &nbsp; &nbsp; name: "Produto",\
 &nbsp; &nbsp; brand: "Marca",\
 &nbsp; &nbsp; quantity: 100,\
@@ -120,7 +120,7 @@ Iniciar o servidor\
 ---
 
 > Método: PATCH\
-> Rota: http://localhost:3000/api/product/{productId}\
+> Rota: http://localhost:3000/api/product/{productId}<br/>
 > Parâmetros da requisição:
 > > Caminho: 
 > > * productId: id do produto
@@ -134,7 +134,7 @@ Iniciar o servidor\
 > Tipo de retorno: JSON\
 > Exemplos de requisição: 
 > > * PATCH /api/product/1
-> >  * payload: {\
+> >   * payload: {\
 &nbsp; &nbsp; name: "Produto editado",\
 &nbsp; &nbsp; brand: "Marca editada"\
 }
@@ -154,7 +154,7 @@ Iniciar o servidor\
 ---
 
 > Método: DELETE\
-> Rota: http://localhost:3000/api/product/{productId}\
+> Rota: http://localhost:3000/api/product/{productId}<br/>
 > Parâmetros da requisição:
 > > Caminho:
 > > * productId: id do produto
@@ -162,12 +162,12 @@ Iniciar o servidor\
 > Tipo de retorno: NULL\
 > Exemplos de requisição: 
 > > * DELETE /api/product/1
-> >  * retorno: null
+> >   * retorno: null
 
 ---
 
 > Método: GET\
-> Rota: http://localhost:3000/api/category\
+> Rota: http://localhost:3000/api/category<br/>
 > Parâmetros da requisição:
 > > Consulta: 
 > > * q: string não obrigatória
@@ -175,9 +175,9 @@ Iniciar o servidor\
 > Tipo de retorno: Array\
 > Exemplos de requisição: 
 > > * GET /api/category
-> >  * retorno: todas as categorias
+> >   * retorno: todas as categorias
 > > * GET /api/product?q=laz
-> >  * retorno: todas as categorias que contenham "laz"
+> >   * retorno: todas as categorias que contenham "laz"
 >
 > Exemplo de retorno:
 > > <pre>
@@ -197,7 +197,7 @@ Iniciar o servidor\
 > > ]
 > > </pre>
 
-##Objetivos
+## Objetivos
 
 1. Criar um CRUD de produtos\
     1.1 Utilizar a rota de buscar todos os produtos e montar uma tabela com os dados
@@ -209,3 +209,9 @@ Iniciar o servidor\
           
     1.3 Adicionar botão na tabela para editar produto, pelo seu id\
     1.4 Adicionar botão na tabela para deletar produto, pelo seu id
+    
+---
+
+### Extra
+
+Criar testes para as coisas criadas.
